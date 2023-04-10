@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git Repo Dashboard</title>
+    <link href="../../public/styles.css" rel="stylesheet">
+</head>
+<body class="bg-red-100 justify-center items-center px-20">
+    <div class="justify-center items-center">
+    <div class="flex-1 py-7 px-2  my-0 sticky self-center "> 
+        <form class="flex-col"></form>
+            <label for="repoName" class="text-xl my-1 mx-0 font-light text-center block">
+                Enter Github Repository Name
+            </label>
+            
+            <div class="flex lg:flex-row flex-col w-full my-0 outline-none items-center justify-center ">
+                <div class="flex flex-col w-full">
+                <input type="text" id="repoName" class="p-2 text-base bg-white  outline-0 border-0 indent-2.5 ease-in 
+                shadow-gray-900 rounded-3xl placeholder:opacity-70 focus:shadow-zinc-800" placeholder="Github repository name"
+                    autoComplete="off"  value=""/>
+                </div>
+                <button class="mt-2 lg:mt-0 box-border relative bg-transparent text-red-600 uppercase border-2 border-solid border-red-600 
+                py-2 px-4 text-base inline-block text-center leading-tight cursor-pointer rounded-3xl outline-0  ml-4" 
+                id='btnRepos' onclick="getRepos()">
+                    Submit
+                </button>
+            </div>
+            <p id='error' class="text-red-600 text-sm m-0"></p>
+            
+        </form>
+    </div>
+    <div id="divResult" class='justify-center items-center'></div>
+</div>
+    <script src='./src/js/home.js'></script>
+</body>
+</html>
