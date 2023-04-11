@@ -1,9 +1,8 @@
-const intRepo = document.getElementById("repoName")
-const GIT_REPO_API = 'https://api.github.com/repos/';
-
-const isPopularRepo = (stargazersCount, forksCount) => {
+export const isPopularRepo = (stargazersCount, forksCount) => {
 	return (stargazersCount * 1 + forksCount * 2) >= 500 ? 'Popular' : 'Not Popular'
 }
+const intRepo = document.getElementById("repoName")
+const GIT_REPO_API = 'https://api.github.com/repos/';
 
 async function getRepos() {
     clear();
