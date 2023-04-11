@@ -11,3 +11,15 @@ a repository name, displays the
 * Button to redirect the user's git repository 
 
 <img src="https://github.com/BhagyaPrasadSamarathunga/Assets/blob/main/git-repo-dashboard.gif" width="400" />
+
+## Setup
+
+```
+npm install
+```
+
+## Run App
+
+```
+Simply use the Live Server extenstion in VS Code
+```
