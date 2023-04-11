@@ -23,3 +23,13 @@ npm install
 ```
 Simply use the Live Server extenstion in VS Code
 ```
+
+## ToDo
+* Display a loader
+* To enhance performances add API caching.
+* Increased unit testing converge.
+* Add image caching.
+* Minify JavaScript and CSS files, and then combine them with HTML files into bundles.
+* Use image placeholder for the git profile picture load.
+* Optimize error handling
+
